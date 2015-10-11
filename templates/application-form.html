@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Skills-HTML-CSS</title>
+    </head>
+    <body>
+        <h1>Job Application</h1>
+        <p id="instructions">Please fill out the application below.</p>
+        <form action="/application" class="app" method="POST">
+            <p id="firstname"><label for="field-firstname">First Name:</label> 
+                <input type="text" name="firstname" id="field-firstname"></p>
+            <p id="lastname"><label for="field-lastname">Last Name:</label> 
+                <input type="text" name="lastname" id="field-lastname"></p>
+            <p id="salary"><label for="field-salary">Salary Requirement:</label> 
+                <select name="salary" id="field-salary">
+                <option value="20000">$20,000</option>
+                <option value="25000">$25,000</option>
+                <option value="30000">$30,000</option>
+                <option value="35000">$35,000</option>
+                <option value="40000">$40,000</option>
+                <option value="45000">$45,000</option>
+                <option value="50000">$50,000</option>
+                <option value="55000">$55,000</option>
+                <option value="60000">$60,000</option>
+                <option value="65000">$65,000</option>
+                <option value="70000">$70,000</option>
+                <option value="75000">$75,000</option>
+                <option value="80000">$80,000</option>
+                <option value="85000">$85,000</option>
+                <option value="90000">$90,000</option>
+                <option value="95000">$95,000</option>
+                <option value="100000">$100,000</option>
+                <option value="150000">$150,000</option>
+                <option value="200000">$200,000</option>
+            </select>
+            </p>
+            <p id="position">Position desired:</p>
+            <label><input type="radio" name="position" value="software-engineer">Software Engineer</label>
+            <label><input type="radio" name="position" value="qa-engineer">QA Engineer</label>
+            <label><input type="radio" name="position" value="productmanager">Product Manager</label>
+            </p>
+            <input type="submit" class="button" value="Submit Application">
+        </form>
+    </body>
+</html>
