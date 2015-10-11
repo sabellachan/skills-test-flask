@@ -19,7 +19,7 @@ def thanks_page():
     position = request.form.get("position")
     salary = request.form.get("salary")
 
-    return "Thank you, {} {}, for applying to be a {}. Your minimum salary requirement is {} dollars.".format(first_name, last_name, position, salary)
+    return "Thank you, {} {}, for applying to be a {}. Your minimum salary requirement is ${}.".format(first_name, last_name, position, salary)
 
 
 if __name__ == "__main__":
